@@ -1,1 +1,41 @@
-<p>careers works!</p>
+<!-- /*
+    1. Page Careers must have articles about job opportunities
+    2. information about companies that are interested in employing alumnis.*
+ -->
+<section  class="section">
+    <div class="container-fluid" id="hero">
+            <div><h1 class="hero__h1 pb-2 px-2 fw-bold">Insert your Text</h1></div>
+            <div><p class="hero__p px-2 fw-bold">lorem ipsum whatever</p></div>
+    </div>
+</section>
+<section id="career_intro" class="section">
+    <div class="container">
+        <div class="px-4 py-5 my-5 text-center">
+            <h1 class="display-5 fw-bold text-body-emphasis">Careers</h1>
+            <div class="col-lg-12 mx-auto">
+              <p class="lead mb-4">Careers in web development offer a dynamic and ever-evolving landscape for tech enthusiasts. As a web developer, you have the power to shape the digital world, creating engaging websites and applications that connect people and businesses. Whether you're a front-end wizard, a back-end genius, or a full-stack magician, this field offers endless opportunities for growth and creativity. Join the ranks of professionals who drive online innovation and revolutionize the way we interact with the internet. If you're ready to code your way to success and embrace a future-driven career, web development is the place to be. Explore the possibilities and build your future with us!</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+<section id="carrer_adive_articles" class="section">
+    <div class="container mt-5">
+        <div class="row custom-card-row">
+          <div class="col-md-6 col-12 col-sm-6 col-lg-4" *ngFor="let article of c_Articles">
+            <div class="card h-100">
+              <img src="{{ article.img }}" class="card-img-top" alt="{{ article.title }}">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">{{ article.title }}</h5>
+                <p class="card-text flex-fill">{{ article.description }}</p>
+                <a routerLink="{{ article.id }}" class="btn btn-primary w-50">Go to article</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+

@@ -6,6 +6,8 @@ import { CareersComponent } from './careers/careers.component';
 import { EventsComponent } from './events/events.component';
 import { StoriesComponent } from './stories/stories.component';
 import { SinglealumniComponent } from './singlealumni/singlealumni.component';
+import { SingleCareerComponent } from './single-career/single-career.component';
+import { SingleventComponent } from './singlevent/singlevent.component';
 
 const routes: Routes = [
   {
@@ -21,10 +23,13 @@ const routes: Routes = [
     path: "events", component: EventsComponent
   },
   {
-    path: "events/:id", component: SinglealumniComponent
+    path: "events/:id", component: SingleventComponent
   },
   {
     path: "careers", component: CareersComponent
+  },
+  {
+    path: "careers/:id", component: SingleCareerComponent
   },
   {
     path: "stories", component: StoriesComponent
