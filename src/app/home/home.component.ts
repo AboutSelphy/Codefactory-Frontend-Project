@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent {
-
+  scrollToTop() {
+    window.scrollTo(0, 0);
+  }
 }

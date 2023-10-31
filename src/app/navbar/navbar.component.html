@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" routerLink="**">
+        <a class="navbar-brand" (click)="scrollToTop()" routerLink="**">
             <img class="" src="../../assets/img/logo.png" width="50" height="50">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,10 +8,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link" routerLink="/alumni">Alumni</a>
-                <a class="nav-link" routerLink="/careers">Careers</a>
-                <a class="nav-link" routerLink="/events">Events</a>
-                <a class="nav-link" routerLink="/stories">Stories</a>
+                <a class="nav-link" (click)="scrollToTop()" routerLink="/alumni">Alumni</a>
+                <a class="nav-link" (click)="scrollToTop()" routerLink="/careers">Careers</a>
+                <a class="nav-link" (click)="scrollToTop()" routerLink="/events">Events</a>
+                <a class="nav-link" (click)="scrollToTop()" routerLink="/stories">Stories</a>
             </div>
         </div>
     </div>

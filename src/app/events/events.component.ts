@@ -11,5 +11,7 @@ import { Router } from '@angular/router';
 })
 export class EventsComponent {
   events: IEvents[] = events;
-
+  scrollToTop() {
+    window.scrollTo(0, 0);
+  }
 }

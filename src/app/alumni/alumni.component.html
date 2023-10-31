@@ -1,1 +1,19 @@
-<p>alumni works!</p>
+<section>
+    <div class="container-fluid" id="hero">
+            <div><h1 class="hero__h1 pb-2 px-2 fw-bold">Alummni</h1></div>
+            <div><p class="hero__p px-2 fw-bold">Our Success Story</p></div>
+    </div>
+</section>
+<section class="alumi py-2 py-lg-5">
+    <div class="container"> 
+        <div class="row  gap-4 justify-content-center align-items-center row-cols-lg-4 row-cols-md-3 row-cols-sm-1 row-cols-sx-1">
+            <div class="card-body col-sx-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 " *ngFor="let item of cardArr, index as i">
+                <img src="{{item.img}}" alt="" class="card-img">
+                <h2 class="card-label">{{ item.name }}</h2>
+                <p class="card-label">{{ item.description }}</p>
+                <p class="card-label">{{item.course}}</p>
+                <button routerLink="/alumni/{{i}}" class="btn btn-cta">Details</button>
+            </div>
+        </div>
+    </div>  
+</section>

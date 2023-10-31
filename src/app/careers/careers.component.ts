@@ -13,4 +13,7 @@ import { iC_AdviceArticles } from '../careers/iC_AdviceArticles';
 
 export class CareersComponent {
   c_Articles : iC_AdviceArticles[] = c_AdviceArticles
+  scrollToTop() {
+    window.scrollTo(0, 0);
+  }
 }

@@ -27,7 +27,7 @@
                         <p class="card-text fw-light">{{event.description}}</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a routerLink="/events/{{i}}"><button type="button" class="btn btn-sm btn-outline-secondary events__customBtn">Register</button></a>
+                                <a routerLink="/events/{{i}}"><button type="button" (click)="scrollToTop()" class="btn btn-sm btn-outline-secondary events__customBtn">Register</button></a>
                             </div>
                             <small class="text-body-secondary fw-bold">{{event.date}}</small>
                         </div>

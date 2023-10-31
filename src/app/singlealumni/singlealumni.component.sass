@@ -1,0 +1,71 @@
+@use '../../config/_colors.sass'
+@use '../../config/_font.sass'
+
+//  color: colors.$white 
+//  font-size: font.$h1-font-size
+
+// Hero
+#hero
+  height: 60vh
+  background-size: cover
+  background-position: 40%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  font-family: 'Lato', sans-serif
+
+  .hero__h1
+    color: colors.$main-color
+    font-size: font.$h1-font-size
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4)
+    text-transform: uppercase
+
+  .hero__p
+    color: colors.$white
+    font-size: font.$h3-font-size
+    // text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3)
+    background-color: colors.$dark
+
+  @media (max-width: 576px)
+    height: 30vh
+
+    .hero__p
+      font-size: font.$normal-font-size
+
+    .hero__h1
+      font-size: 2.1rem
+
+// Card body
+
+.card-body 
+    padding: 1rem
+    margin: 1rem  
+    background-color: colors.$grey 
+    color: colors.$dark
+    max-width: 90%
+    border-radius: 12px
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.3)
+
+
+    .card-img
+        object-fit: cover
+        padding: 0.813rem
+        aspect-ratio: 1 / 1
+        border-radius: 25px
+
+        h2
+          font-size: font.$h2-font-size
+
+        p
+          font-size: font.$normal-font-size 
+          color: colors.$semi-dark
+
+    .card-label
+        padding: .500rem
+        background-color: colors.$white
+        border-radius: .500rem
+ 
+
+    
+    

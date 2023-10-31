@@ -13,7 +13,7 @@
             <h3>{{ article.title }}</h3>
             <p><small class="fw-bold">created: {{ article.date}}</small></p>
             <p>{{ article.content }}</p>
-            <a routerLink="/careers" class="btn btn-primary mt-5">Back</a>
+            <a routerLink="/careers" class="btn btn-primary mt-5" (click)="scrollToTop()">Back</a>
         </div>
     </div>
 </section>

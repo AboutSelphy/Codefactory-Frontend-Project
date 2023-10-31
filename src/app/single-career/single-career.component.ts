@@ -14,6 +14,10 @@ export class SingleCareerComponent implements OnInit {
   
   constructor(private route: ActivatedRoute){}
 
+  scrollToTop() {
+    window.scrollTo(0, 0);
+  }
+
   ngOnInit(): void {
     this.route.params.subscribe((params: Params) => {
       console.log(params)

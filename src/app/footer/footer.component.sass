@@ -1,0 +1,56 @@
+@use '../../config/_colors.sass'
+@use '../../config/_font.sass'
+
+.footer
+  background-color: colors.$dark
+  margin-top: 50px
+
+.footer__container
+  display: grid 
+  grid-template-columns: repeat(2, max-content)
+  justify-content: space-between
+  align-items: center
+  padding: 1.5rem
+
+.footer__links
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 3rem
+  order: 1
+  list-style: none
+  margin: 0
+
+.footer__link
+  color: white
+  transition: color 0.4s
+  text-decoration: none
+
+  &:hover
+    color: colors.$main-color
+
+.footer__copy
+  color: white
+  text-align: center
+  text-decoration: none
+
+  a
+    color: white
+    text-decoration: none
+
+@media (max-width: 500px)
+  .footer__links
+    gap: 1rem
+    flex-direction: column
+    padding: 0
+    order: -1
+    
+    a 
+     border-bottom: 1px solid grey
+
+  .footer__container
+    grid-template-columns: repeat(1, max-content)
+    align-items: center
+    justify-content: center
+  .footer__copy
+    margin-top: 15px
