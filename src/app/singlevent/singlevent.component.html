@@ -1,1 +1,80 @@
-<p>singlevent works!</p>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center mb-5 event__header"><strong>{{event.name}}</strong></h1>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="{{event.image}}" class="img-fluid pb-5" alt="Event Image">
+        </div>
+        <div class="col-md-6 d-flex justify-content-center flex-column">
+            <h2>About the Event</h2>
+            <p class="fw-light">{{event.description}}</p>
+            <p class="fw-light"> <strong>Date: </strong>{{event.date}}</p>
+            <p class="fw-light" > <strong>Location: </strong> <span style="text-decoration: underline;">{{event.location}}</span></p>
+        </div>
+    </div>
+
+
+
+<div>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2 class="fw-light text-center speakers__header fw-bold ">Speakers</h2>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <table class="table table-bordered text-center speaker__table">
+                    <thead>
+                        <tr>
+                            <th>Speaker:</th>
+                            <th>Topic:</th>
+                        </tr>
+                    </thead>
+                    <tbody class="fw-light">
+                        <tr>
+                            <td style="width: 50%;">{{event.speakers[0].name}}</td>
+                            <td>{{event.speakers[0].topic}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{event.speakers[1].name}}</td>
+                            <td>{{event.speakers[1].topic}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{event.speakers[2].name}}</td>
+                            <td>{{event.speakers[2].topic}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-md-6 m-auto">
+                <h2 class="text-center fw-bold my-4">Registration</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                    </div>
+                    <button type="submit" class="btn btn-primary events__customBtn" (click)="alert()">Register Now</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>
+ 

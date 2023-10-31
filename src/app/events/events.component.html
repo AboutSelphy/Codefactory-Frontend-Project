@@ -1,1 +1,47 @@
-<p>events works!</p>
+<section>
+    <div class="container-fluid" id="hero">
+        <div>
+            <h1 class="hero__h1 pb-2 px-2 fw-bold">Events</h1>
+        </div>
+        <div>
+            <p class="hero__p px-2 fw-bold">Experience the Future of Tech with us at CodeFactory</p>
+        </div>
+    </div>
+</section>
+
+    
+  <div class="container pt-5">
+    <h1 class="text-center fw-bold events__header">Sign up for our Events</h1>
+  </div>  
+
+<div>
+    <div class="container py-5">
+        <div class="row row-cols-1 row-cols-lg-3 g-3">
+
+        <div *ngFor="let event of events; let i = index">
+            <div class="col">
+                <div class="card shadow-sm events__card">
+                    <img src={{event.image}} alt="Event 3">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">{{event.name}}</h5>
+                        <p class="card-text fw-light">{{event.description}}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a routerLink="/events/{{i}}"><button type="button" class="btn btn-sm btn-outline-secondary events__customBtn">Register</button></a>
+                            </div>
+                            <small class="text-body-secondary fw-bold">{{event.date}}</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        </div>
+    </div> 
+</div>
+   
+    

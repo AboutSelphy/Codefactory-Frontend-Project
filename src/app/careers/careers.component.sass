@@ -1,6 +1,21 @@
 @use '../../config/_colors.sass'
 @use '../../config/_font.sass'
 
+
+.hero-wrapper
+    position: relative
+
+    &::before
+        display: block
+        content: ""
+        height: 100%
+        width: 100%
+        position: absolute
+        background: rgba(0, 0, 0, 0.5)
+        top: 0
+        left: 0
+        z-index: 1
+
 #hero
     height: 60vh
     background-image: url(../../assets/img/img.jpg)
@@ -17,12 +32,16 @@
         font-size: font.$h1-font-size
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4)
         text-transform: uppercase
+        position: relative
+        z-index: 9
 
     .hero__p
         color: colors.$white
         font-size: font.$h3-font-size
         text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3)
         background-color: colors.$dark
+        position: relative
+        z-index: 9
 
     @media (max-width: 576px)
         height: 30vh
@@ -31,7 +50,7 @@
         font-size: font.$normal-font-size
 
     .hero__h1
-        font-size: 2.1rem
+        font-size: font.$h1-font-size
 
 //component Carrer
 
@@ -71,6 +90,12 @@
     display: inline-block
     width: 10%
     min-width: auto
+
+
+#career_hire
+    background: colors.$grey
+
+
 
 
 

@@ -2,7 +2,7 @@
 <section  class="section hero-wrapper">
     <div class="container-fluid" id="hero" style="background-image: url('{{article.img}}');">
         <div><h1 class="hero__h1 pb-2 px-2 fw-bold">{{ article.title }}</h1></div>
-        <div><p class="hero__p px-2 fw-bold">lorem ipsum whatever</p></div>
+        <div><p class="hero__p px-2 fw-bold">{{ article.content }}</p></div>
     </div>
 </section>
 
@@ -13,7 +13,7 @@
             <h3>{{ article.title }}</h3>
             <p><small class="fw-bold">created: {{ article.date}}</small></p>
             <p>{{ article.content }}</p>
-            <a routerLink="/careers" class="btn btn-primary">Back</a>
+            <a routerLink="/careers" class="btn btn-primary mt-5">Back</a>
         </div>
     </div>
 </section>

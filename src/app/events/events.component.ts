@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { events } from './events';
+import { IEvents } from './Ievents';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-events',
@@ -6,5 +10,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./events.component.sass']
 })
 export class EventsComponent {
+  events: IEvents[] = events;
 
 }
