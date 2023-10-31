@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SingleventComponent } from './singlevent/singlevent.component';
 import { SinglealumniComponent } from './singlealumni/singlealumni.component';
 import { SingleCareerComponent } from './single-career/single-career.component';
+import { StoriesDetailsComponent } from './stories-details/stories-details.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SingleCareerComponent } from './single-career/single-career.component';
     FooterComponent,
     SingleventComponent,
     SinglealumniComponent,
-    SingleCareerComponent
+    SingleCareerComponent,
+    StoriesDetailsComponent
   ],
   imports: [
     BrowserModule,

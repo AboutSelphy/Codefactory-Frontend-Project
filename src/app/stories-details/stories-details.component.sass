@@ -1,0 +1,49 @@
+@use '../../config/_colors.sass'
+@use '../../config/_font.sass'
+
+*, *::before, *::after
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  overflow-x: none
+  font-family: 'Lato', sans-serif
+
+
+.stories-wrapper-details
+  background-color: colors.$white
+  font-size: font.$normal-font-size
+  color: colors.$dark
+  padding-bottom: 50px
+  min-height: calc( 100dvh - 77px )
+
+  .storiesContainer
+    display: block
+    text-align: center
+
+
+    .storiesTitle
+      font-size: font.$h1-font-size
+      font-weight: 400
+      padding: 3rem 0
+
+      span
+        color: colors.$main-color
+
+
+    .storyImg
+      width: 30rem
+      padding-bottom: 3rem
+      object-fit: cover
+
+      @media screen and (max-width:768px)
+        width: 100%
+        padding-bottom: 0.5rem
+
+    .storyDetailContainer
+      background-color: colors.$grey
+
+      .storyDetail
+          padding: 3rem 0
+          margin: 0 3rem
+          
+          

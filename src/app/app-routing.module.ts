@@ -8,6 +8,7 @@ import { StoriesComponent } from './stories/stories.component';
 import { SinglealumniComponent } from './singlealumni/singlealumni.component';
 import { SingleCareerComponent } from './single-career/single-career.component';
 import { SingleventComponent } from './singlevent/singlevent.component';
+import { StoriesDetailsComponent } from './stories-details/stories-details.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,9 @@ const routes: Routes = [
   },
   {
     path: "stories", component: StoriesComponent
+  },
+  {
+    path: "stories/:id", component: StoriesDetailsComponent
   },
   {
     path: "**", redirectTo: ""

@@ -1,1 +1,39 @@
-<p>stories works!</p>
+<div class="stories-wrapper">
+
+  
+  <!-- HERO SECTION -->
+  <section>
+    <div class="container-fluid" id="hero">
+      <div>
+        <h1 class="hero__h1 pb-2 px-2 fw-bold">Success Stories</h1>
+      </div>
+      <div>
+        <p class="hero__p px-2 fw-bold">Some of the inspiring stories</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORIES SECTION -->
+  <section class="stories-wrapper">
+    
+  <div class="container text-center mw-100">
+    <p class="storiesTitle text-center">Some of the inspiring <span>success stories</span></p>
+  </div>
+  <div class="container-fluid row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 m-auto container-help">
+    
+    
+    <div class="col d-flex justify-content-around" *ngFor="let story of stories; index as i">
+      <div class="card">
+        <img src={{story.image}} class="card-img-top storyImg" alt={{story.name}} />
+        <div class="card-body">
+          <p class="card-title storyName">{{story.name}}</p>
+          <p class="storyProfession"><b>Profession: </b>{{story.profession}}</p>
+          <p class="card-text storyDetail">{{story.description}}</p>
+          <a class="btns" routerLink="/stories/{{i}}">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>

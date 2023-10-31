@@ -1,0 +1,135 @@
+@use '../../config/_colors.sass'
+@use '../../config/_font.sass'
+
+*, *::before, *::after
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  overflow-x: none
+  font-family: 'Lato', sans-serif
+
+
+.stories-wrapper
+  background-color: colors.$white
+  font-size: font.$normal-font-size
+  color: colors.$dark
+
+  #hero
+    height: 60vh
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/19/13/15/computer-2242263_1280.jpg)
+    background-size: cover
+    background-position: 40%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    font-family: 'Lato', sans-serif
+
+    @media (max-width: 576px)
+      height: 30vh
+
+      .hero__p
+        font-size: font.$normal-font-size
+
+      .hero__h1
+        font-size: 2.1rem
+
+  .hero__h1
+    color: colors.$main-color
+    font-size: font.$h1-font-size
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4)
+    text-transform: uppercase
+
+  .hero__p
+    color: colors.$white
+    font-size: font.$h3-font-size
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3)
+    background-color: colors.$dark
+
+  .storiesTitle
+    color: colors.$dark
+    font-size: font.$h1-font-size
+    font-weight: 400
+    padding: 3rem
+    text-transform: uppercase
+    background-color: colors.$white
+  
+
+  div
+    p
+      span
+        color: colors.$main-color
+
+  .row
+    row-gap: 3rem
+    padding-bottom: 5rem
+    padding-left: 1rem
+    padding-right: 1rem
+
+    .col
+      padding: 0 1rem
+
+      .card
+         width: 100%
+         background-color: colors.$grey
+         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+
+         .storyImg
+            object-fit: cover
+            width: 100%
+            height: 300px
+
+
+         .card-body
+            padding: 1rem
+
+            .storyName
+              padding: 1rem 0
+              font-weight: 700
+              color: colors.$main-color
+              font-size: font.$h2-font-size
+
+            .storyProfession
+              padding-bottom: 1rem
+
+            .storyDetail
+              display: inline-block
+              width: 10rem
+              white-space: nowrap
+              overflow: hidden !important
+              text-overflow: ellipsis
+              padding-bottom: 1rem
+            
+
+            .btns
+              text-decoration: none
+              display: block
+              font-size: font.$normal-font-size
+              color: colors.$white
+              padding: 0.5rem 3rem
+              background-color: colors.$dark
+              border-radius: 25px
+              text-align: center
+              width: 70%
+              transition: all 0.15s ease-in
+              margin: 0 auto
+              min-width: 150px
+
+            .btns:hover
+              background-color: colors.$main-color
+              color: colors.$white    
+
+              
+.container-help
+  max-width: 1300px
+
+  @media (max-width: 989px)
+    max-width: 100%
+
+        
+
+
+
+  
+  
+    

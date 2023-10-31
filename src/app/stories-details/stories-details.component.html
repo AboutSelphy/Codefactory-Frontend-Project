@@ -1,0 +1,9 @@
+<div class="stories-wrapper-details">
+  <div class="storiesContainer px-2 px-lg-5" *ngIf="stories">
+    <p class="storiesTitle">Success story of <span>{{stories.name}}</span></p>
+    <img class="storyImg" src={{stories.image}} alt={{stories.name}}>
+    <div class="storyDetailContainer">
+      <p class="storyDetail">{{stories.description}}</p>
+    </div>
+  </div>
+</div>

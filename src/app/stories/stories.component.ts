@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Istories } from '../istories';
+import { stories } from '../stories';
 
 @Component({
   selector: 'app-stories',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./stories.component.sass']
 })
 export class StoriesComponent {
+  stories: Array<Istories> = stories
+
+  constructor(){}
 
 }
