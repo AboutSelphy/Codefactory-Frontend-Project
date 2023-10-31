@@ -1,21 +1,23 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="text-center mb-5 event__header"><strong>{{event.name}}</strong></h1>
+            <h1 class="text-center mb-5 event__header">{{event.name}}</h1>
         </div>
     </div>
+
+    <div class="container">
+        <img src="{{event.image}}" width="100%" height="200px" alt="Event Image" style="object-fit: cover; box-shadow: 0 8px 15px rgb(0, 0, 0, 0.3); border-radius: 8px;">
+    </div>
     
-    <div class="row mt-4">
-        <div class="col-md-6">
-            <img src="{{event.image}}" class="img-fluid pb-5" alt="Event Image">
-        </div>
-        <div class="col-md-6 d-flex justify-content-center flex-column">
+   
+
+        <div class="container d-flex justify-content-center align-items-center flex-column mt-4">
             <h2>About the Event</h2>
             <p class="fw-light">{{event.description}}</p>
             <p class="fw-light"> <strong>Date: </strong>{{event.date}}</p>
             <p class="fw-light" > <strong>Location: </strong> <span style="text-decoration: underline;">{{event.location}}</span></p>
         </div>
-    </div>
+
 
 
 
@@ -29,7 +31,7 @@
         <div class="row mt-4">
             <div class="col-md-12">
                 <table class="table table-bordered text-center speaker__table">
-                    <thead>
+                    <thead class="table__header">
                         <tr>
                             <th>Speaker:</th>
                             <th>Topic:</th>
@@ -37,24 +39,30 @@
                     </thead>
                     <tbody class="fw-light">
                         <tr>
-                            <td style="width: 50%;">{{event.speakers[0].name}}</td>
+                            <td style="width: 50%;">1: {{event.speakers[0].name}}</td>
                             <td>{{event.speakers[0].topic}}</td>
                         </tr>
                         <tr>
-                            <td>{{event.speakers[1].name}}</td>
+                            <td>2: {{event.speakers[1].name}}</td>
                             <td>{{event.speakers[1].topic}}</td>
                         </tr>
                         <tr>
-                            <td>{{event.speakers[2].name}}</td>
+                            <td>3: {{event.speakers[2].name}}</td>
                             <td>{{event.speakers[2].topic}}</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-        
-        <div class="row mt-4">
-            <div class="col-md-6 m-auto">
+
+     
+        <div class="mt-4 d-flex justify-content-between event__form">
+            <div class="col-md-6" >
+                <div class="embed-responsive embed-responsive-1by1">
+                    <img src="../../assets/img/Taube.jpg" alt="" width="100%" class="embed-responsive-item">
+                </div>
+            </div>
+            <div class="col-md-6" style="margin-left: 20px;">
                 <h2 class="text-center fw-bold my-4">Registration</h2>
                 <form>
                     <div class="mb-3">
@@ -69,10 +77,12 @@
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="email" placeholder="Enter your email address">
                     </div>
+                    <button class="btn btn-primary events__customBtn" (click)="alert($event)">Register Now</button>
                 </form>
-                <button class="events__customBtn" (click)="alert($event)">Register Now</button>
             </div>
         </div>
+        
+
         
     </div>
     

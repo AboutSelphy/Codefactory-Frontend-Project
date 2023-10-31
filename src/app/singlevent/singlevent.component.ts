@@ -21,8 +21,7 @@ export class SingleventComponent {
     });
   }
 
-  alert(event : Event){
-    console.log(event)
+  alert(event: Event){
     event.preventDefault()
     Swal.fire({
       title: 'Thank You for Registering!',
