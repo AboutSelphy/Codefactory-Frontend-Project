@@ -1,16 +1,20 @@
 
-<section  class="section">
+<section  class="section hero-wrapper">
     <div class="container-fluid" id="hero" style="background-image: url('{{article.img}}');">
-            <div><h1 class="hero__h1 pb-2 px-2 fw-bold">Insert your Text</h1></div>
-            <div><p class="hero__p px-2 fw-bold">lorem ipsum whatever</p></div>
+        <div><h1 class="hero__h1 pb-2 px-2 fw-bold">{{ article.title }}</h1></div>
+        <div><p class="hero__p px-2 fw-bold">lorem ipsum whatever</p></div>
     </div>
+</section>
 
-<div class="container p-2 p-lg-5 mw-100 w-100 mh-100">
-    <div *ngIf="article">
-        <!-- <img class="img-thumbnail" src={{article.img}} alt={{article.title}}> -->
-        <h3>{{ article.title }}</h3>
-        <p>{{ article.description }}</p>
-        <p>{{ article.date}}</p>
-        <a routerLink="/careers" class="btn btn-primary">Back</a>
+<section>
+    <div class="container p-2 p-lg-5 text-center">
+        <div *ngIf="article">
+            <!-- <img class="img-thumbnail" src={{article.img}} alt={{article.title}}> -->
+            <h3>{{ article.title }}</h3>
+            <p><small class="fw-bold">created: {{ article.date}}</small></p>
+            <p>{{ article.content }}</p>
+            <a routerLink="/careers" class="btn btn-primary">Back</a>
+        </div>
     </div>
-</div>
+</section>
+

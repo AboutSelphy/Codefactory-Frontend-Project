@@ -4,4 +4,5 @@ export interface iC_AdviceArticles {
     description: string;
     date: string;
     img: string;
+    content: string;
 }

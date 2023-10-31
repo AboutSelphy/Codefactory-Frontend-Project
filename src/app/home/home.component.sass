@@ -1,0 +1,68 @@
+@use '../../config/_colors.sass'
+@use '../../config/_font.sass'
+
+#hero
+  height: 60vh
+  background-image: url(../../assets/img/image1.jpeg)
+  background-size: cover
+  background-position: 40%
+ 
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  font-family: 'Lato', sans-serif
+
+  .hero__h1
+    color: colors.$main-color
+    font-size: font.$h1-font-size
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4)
+    text-transform: uppercase
+
+
+  .hero__p
+    color: colors.$white
+    font-size: font.$h3-font-size
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3)
+    background-color: colors.$dark
+
+  @media (max-width: 576px)
+    height: 30vh
+
+    .hero__p
+      font-size: font.$normal-font-size
+
+    .hero__h1
+      font-size: 2.1rem
+
+.careers-img
+  margin: -6rem
+  margin-left: 1rem
+  border-radius: 4px
+
+
+.welcome-img  
+  margin-left: 1rem
+
+.btn 
+  background-color: colors.$grey
+  outline: none
+  border: none
+
+.btn:hover
+  background-color: colors.$main-color     
+ 
+
+.story
+  margin-left: 2rem
+  margin-right: 2rem
+
+
+
+
+
+
+
+
+
+ 
