@@ -1,5 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
+@use './config/_colors.sass'
+@use './config/_font.sass'
+
 *
     font-family: 'Lato',sans-serif
     box-sizing: border-box
+
+
+.btn, .btn-primary, .btns
+    background: colors.$main-color !important
+    border-radius: 25px
+    border: none
+    color: white !important
+
+    &:hover
+        background: colors.$semi-dark !important
